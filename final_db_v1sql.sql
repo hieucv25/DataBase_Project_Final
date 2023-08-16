@@ -241,5 +241,6 @@ insert into ChiTietLichHen(NgayTao,NgaySua,IdLichHen) values (GETDATE(),GETDATE(
 insert into LichSuLichHen(TrangThai,IdLichHen,NgayTao,NgaySua) values (1,'469ed22b-9c5c-4977-87cd-094da2df6e01',GETDATE(),GETDATE())
 Alter table NhanVien Add Anh VARCHAR(255)
 Alter table KhachHang Add Anh VARCHAR(255)
+Alter table LoaiDichVu Add TrangThai bit
 
 
