@@ -233,15 +233,13 @@ select * from KhachHang
 select * from ChiTietLichHen
 select * from LichSuLichHen
 
-alter table LichHen add MaLichHen VARCHAR(10) UNIQUE
-alter table NhanVien add MatKhau varchar(15)
-alter table KhachHang add MatKhau varchar(15)
 insert into LichHen (MaLichHen,ThoiGianDat,TrangThai,LoaiLichHen,ThoiGianDuKien,NgayTao,IdKhachHang,SDT) values ('LH1','2023-1-1 9:30',1,0,2,GETDATE(),'89f9a39e-738b-41c8-861b-0b268ad87ca7','092816377')
 insert into NhanVien (MaNhanVien,HoTen,Email,SDT,TrangThai,ChucVu,NgayTao,MatKhau) values ('NV3','Chu Van Hieu2','hieu2@gmail.com','0359693209',0,2,GETDATE(),'$2a$10$Z8WFqPyBIyRkohGHFy1bYO8.j013BR8kSx2qnpqYCBgLZ07D5g1P6')
 insert into ChucVu (TenChucVu,NgayTao) values ('STAFF',GETDATE())
 insert into KhachHang (MaKhachHang,Email,SDT,GioiTinh,NgayTao,MatKhau,HoTen) values ('KH21','abaa@gmail.com','098765555',0,GETDATE(),'abc','Nguyen Van Tuan')
 insert into ChiTietLichHen(NgayTao,NgaySua,IdLichHen) values (GETDATE(),GETDATE(),'469ed22b-9c5c-4977-87cd-094da2df6e01')
 insert into LichSuLichHen(TrangThai,IdLichHen,NgayTao,NgaySua) values (1,'469ed22b-9c5c-4977-87cd-094da2df6e01',GETDATE(),GETDATE())
-
+Alter table NhanVien Add Anh VARCHAR(255)
+Alter table KhachHang Add Anh VARCHAR(255)
 
 
