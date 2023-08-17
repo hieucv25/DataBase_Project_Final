@@ -242,5 +242,5 @@ insert into LichSuLichHen(TrangThai,IdLichHen,NgayTao,NgaySua) values (1,'469ed2
 Alter table NhanVien Add Anh VARCHAR(255)
 Alter table KhachHang Add Anh VARCHAR(255)
 Alter table LoaiDichVu Add TrangThai bit
-
+Alter table PhuKien Add Anh VARCHAR(255)
 
